@@ -6,7 +6,6 @@ on:
     - cron: '0 */6 * * *'
   workflow_dispatch: # Permite activarlo manualmente
 
-# Esto le da explícitamente permisos de escritura al robot
 permissions:
   contents: write
 
@@ -16,6 +15,8 @@ jobs:
     steps:
     - name: Clonar repositorio
       uses: actions/checkout@v4
+      with:
+        persist-credentials: true
 
     - name: Configurar Python
       uses: actions/setup-python@v5
@@ -30,4 +31,12 @@ jobs:
         git config --global user.name 'GitHub Action Robot'
         git config --global user.email 'action@github.com'
         git add lista.m3u
-        git diff --quiet && git diff --staged --quiet || (git commit -m "Robot: Token de Color Visión actualizado automáticamente" && git push)
+        
+        # Verificamos si hubo cambios antes de subir
+        if ! git diff --quiet || ! git diff --staged --quiet; then
+          git commit -m "Robot: Token de Color Visión actualizado automáticamente"
+          # Forzamos el empuje usando el token secreto del sistema
+          git push https://x-access-token:${{ secrets.GITHUB_TOKEN }}@github.com/${{ github.repository }}.git HEAD:${{ github.ref_name }}
+        else
+          print "No hubo cambios en el enlace hoy."
+        fi
