@@ -1,28 +1,19 @@
 #EXTM3U
-
 #EXTINF:-1 tvg-id="Teleantillas.do" tvg-logo="https://raw.githubusercontent.com/iptv-org/database/master/data/logos/channels/Teleantillas.png" group-title="Dominicana",Teleantillas HD
 https://p-teleantillas-vlb.gcdn.co/video/73c24cf1b98fbc1852c79f9725f4fbfe15b5e670/teleantillas-hd/index.m3u8
-
 #EXTINF:-1 tvg-id="ColorVision.do" tvg-logo="https://raw.githubusercontent.com/iptv-org/database/master/data/logos/channels/ColorVision.png" group-title="Dominicana",Color Vision (Canal 9)
 https://colorvision.com.do
-
 #EXTINF:-1 tvg-id="Telemicro.do" tvg-logo="https://iptv-org.github.io/database/logos/channels/TelemicroHD.png" group-title="Dominicana",Telemicro HD
 https://p-telemicro-vlb.gcdn.co/video/73c24cf1b98fbc1852c79f9725f4fbfe15b5e670/telemicro-hd/index.m3u8
-
 #EXTINF:-1 tvg-id="Antena7.do" tvg-logo="https://iptv-org.github.io/database/logos/channels/Antena7.png" group-title="Dominicana",Antena 7
 https://antena7.gcdn.co/video/antena7/index.m3u8
-
 #EXTINF:-1 tvg-id="Antena21.do" tvg-logo="https://iptv-org.github.io/database/logos/channels/Antena21.png" group-title="Dominicana",Antena 21
 https://d1ypfac91iuc9g.cloudfront.net/ts:abr.m3u8
-
 #EXTINF:-1 tvg-id="CDN37.do" tvg-logo="https://iptv-org.github.io/database/logos/channels/CDN37.png" group-title="Dominicana",CDN Canal 37
 https://59db234b655da.streamlock.net/cdn/_definst_/cdn/playlist.m3u8
-
 #EXTINF:-1 tvg-id="Televida.do" tvg-logo="https://iptv-org.github.io/database/logos/channels/Televida.png" group-title="Dominicana",Televida
 https://cnn.hostlagarto.com/televida/playlist.m3u8
-
 #EXTINF:-1 tvg-id="SuperCanal.do" tvg-logo="https://iptv-org.github.io/database/logos/channels/SuperCanal.png" group-title="Dominicana",Super Canal 33
 https://cnn.hostlagarto.com/supercanalhd/playlist.m3u8
-
 #EXTINF:-1 tvg-id="LuzDivinaTV.do" tvg-logo="https://iptv-org.github.io/database/logos/channels/LuzDivinaTV.png" group-title="Dominicana",Luz Divina TV
 https://tv.wracanal10.com:3776/live/luzdivinatvlive.m3u8
