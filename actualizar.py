@@ -25,7 +25,7 @@ def actualizar_lista():
         return
 
     # Leer la lista actual
-    with open("lista.m3u", "r", encoding="utf-8") as f:
+    with open("Canales RD.m3u", "r", encoding="utf-8") as f:
         lineas = f.readlines()
 
     # Buscar la línea de Color Vision y reemplazar la siguiente
@@ -36,7 +36,7 @@ def actualizar_lista():
             break
 
     # Guardar los cambios en el archivo
-    with open("lista.m3u", "w", encoding="utf-8") as f:
+    with open("Canales RD.m3u", "w", encoding="utf-8") as f:
         f.writelines(lineas)
     print("¡Lista M3U actualizada con éxito con el token del día!")
 
